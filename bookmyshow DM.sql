@@ -14,8 +14,7 @@ DESCRIBE Shows;
 
 CREATE TABLE Theatres (
 theatre_id INT AUTO_INCREMENT PRIMARY KEY, 
-theatre_name VARCHAR(20) NOT NULL,
-UNIQUE KEY unique_theatre_name (theatre_name) 
+theatre_name VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE Shows (
@@ -27,8 +26,7 @@ show_time INT NOT NULL,
 show_type VARCHAR(2) NOT NULL,
 movie_type VARCHAR(2) NOT NULL,
 screen_no INT NOT NULL,
-theatre_id INT NOT NULL,
-UNIQUE KEY unique_show_no (show_no) 
+theatre_id INT NOT NULL
 );
 
 INSERT INTO Theatres
